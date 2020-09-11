@@ -16,5 +16,9 @@ Example:
 // if both strings match and false if they do not.
 const isPalidrome = str => str.split('').reverse().join('') === str;
 
+
+
+
+
 console.log(isPalidrome('racecar'))
 console.log(isPalidrome('school'))

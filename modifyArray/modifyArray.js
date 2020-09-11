@@ -7,6 +7,8 @@ Output: [4, 8, 16, 20]
 */
 
 const modifyArray = (arr, num) => {
+    //creates a new array that is populated with the new
+    //results using the map method.
     const result = arr.map(x => x * num)
     return result;
 }
