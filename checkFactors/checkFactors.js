@@ -7,7 +7,7 @@ ex: checkFactors([2, 3, 4], 12) => true
 */
 
 const checkFactors = (arr, num)=> {
-    //created a variable to 
+    
     const matches = curr => num % curr === 0;
 
     return arr.every(matches);

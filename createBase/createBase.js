@@ -9,6 +9,7 @@ addSix(22) = 28
 */
 const createBase = num => {
     return function(N) {
+
         return N +  num;
     };
 }

@@ -7,6 +7,8 @@ Ex: numSyllables('beau-ti-ful') === 3
     numSyllables('gra-ti-tude') === 3
 */
 const numSyllables = str => {
+    // divides the string into an array with '-' as the separator
+    //then returns the length of that array
     return str.split('-').length
 }
 

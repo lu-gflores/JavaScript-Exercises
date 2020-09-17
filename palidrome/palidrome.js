@@ -17,7 +17,10 @@ Example:
 const isPalidrome = str => str.split('').reverse().join('') === str;
 
 
-
+function isPalidrome(str) {
+    str = str.replace(/[\s\.\,\/]/g, '').toLowerCase() //removes spaces and special characters
+    return str.split('').reverse().join('') === str;
+}
 
 
 console.log(isPalidrome('racecar'))
