@@ -9,6 +9,15 @@ const calcTip = function (bill) {
     return tip + bill;
 }
 
+//calculates the total average of the totals array
+const calcAverage = function (arr) {
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    return sum / arr.length
+}
+
 //looping though the bills array
 for (let i = 0; i < bills.length; i++) {
     //pass the index of each bill to calcTip
@@ -20,3 +29,4 @@ for (let i = 0; i < bills.length; i++) {
 }
 
 console.log(bills, tips, totals)
+console.log(calcAverage(totals))
