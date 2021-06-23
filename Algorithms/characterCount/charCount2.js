@@ -58,8 +58,8 @@ console.log(charCount2('hello'))
 //     for(let i = 0; i < str.length; i++) {
 //         let char = str[i].toLowerCase()
 //         if(/[a-z0-9]/.test(char)) {
-//             if(obj[char] > 0) {
-//                 obj[char]++
+//             if(object[char] > 0) {
+//                 object[char]++
 //             } else {
 //                 object[char] = 1
 //             }
@@ -74,11 +74,7 @@ function charCount(str) {
     for (let char of str) {
         char = char.toLowerCase()
         if (/[a-z0-9]/.test(char)) {
-            if (object[char] > 0) {
-                object[char]++
-            } else {
-                object[char] = 1
-            }
+            object[char] = ++object[char] || 1
         }
     }
     return object
