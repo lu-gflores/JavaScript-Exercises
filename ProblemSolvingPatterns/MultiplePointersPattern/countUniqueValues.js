@@ -34,3 +34,19 @@ function countUniqueValues(arr) {
 }
 
 console.log(countUniqueValues([1, 2, 3, 4, 4, 4, 5, 5, 67, 7, 12, 12, 13]))
+
+// Version 2
+function countUniqueValeus2(arr) {
+    if (arr.length === 0) return 0
+
+    let count = 0
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[count] !== arr[i]) {
+            count++;
+            arr[count] = arr[i]
+        }
+    }
+    return count + 1
+}
+
+console.log(countUniqueValues2([1, 2, 3, 4, 3, 9, 4, 5, 5, 67, 7, 12, 12, 13]))
