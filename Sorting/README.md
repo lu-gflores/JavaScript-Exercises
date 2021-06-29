@@ -9,6 +9,15 @@
 
 ## Basic Sorting
 
+These are elementary sorts that are best used on data that are nearly sorted. On average, their time complexity is O(n^2), and roughly equivalent,
+selection being the worst.
+
 - Bubble
 - Selection
 - Insertion
+
+## Advanced Sorting
+
+- Merge
+- Quick
+- Radix
