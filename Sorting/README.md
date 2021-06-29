@@ -16,7 +16,7 @@ selection being the worst.
 - Selection
 - Insertion
 
-## Advanced Sorting
+## Intermediate Sorting
 
 - Merge
 - Quick
